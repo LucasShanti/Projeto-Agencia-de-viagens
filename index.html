@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elleventrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><span class="logo-icon"><img src="images/elleventriplogo1.png" alt="Logo Elleventrip" style="height:100px;vertical-align:middle;"></span> Elleventrip </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav-menu">
+            <a href="#" class="nav-caixa">(Campo em branco)</a>
+            <a href="#" class="nav-caixa">(Campo em branco)</a>
+            <a href="#" class="nav-caixa">(Campo em branco)</a>
+            <a href="#" class="nav-caixa">(Campo em branco)</a>
+            <a href="#" class="nav-caixa">(Campo em branco)</a>
+        </nav>
+        <div class="idioma">
+           
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Viaje ao redor do mundo</h1>
+            <p>Realize sua próxima viagem com quem entende do assunto! Destinos incríveis, atendimento de confiança e reserva fácil para você explorar o mundo do seu jeito.</p>
+            <form class="busca">
+                <input type="text" placeholder="Cidade, destino ou hotel">
+                <input type="text" placeholder="Data de entrada">
+                <input type="text" placeholder="Data de saída">
+                <input type="text" placeholder="Número de hospedes">
+                <button type="submit" aria-label="Search"><span class="icone-busca"><img src="images/lupa.jpg" alt="Buscar" style="height:24px;width:24px;object-fit:contain;vertical-align:middle;"></span></button>
+            </form>
+        </section>
+        
+        <section class="guides-section">
+            <h2>Guias para suas próximas férias</h2>
+            <p class="guides-subtitle">Confira a seleção desta semana de produtos populares que podem chamar sua atenção.</p>
+            
+            <div class="category-buttons">
+                <button class="category-btn active">Todos</button>
+                <button class="category-btn">Tendências</button>
+                <button class="category-btn">Populares</button>
+                <button class="category-btn">Destaques</button>
+                <button class="category-btn">Recomendados</button>
+                <button class="category-btn">Pacotes de viagem</button>
+            </div>
+            
+            <div class="destinations-grid">
+                <!-- Card 1 - Ponte de Rialto -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=683&q=80" alt="Ponte de Rialto, Itália" class="destination-image">
+                    <div class="destination-info">
+                        <div class="destination-title">
+                            <h3 class="destination-name">🚢 Ponte de Rialto, Itália</h3>
+                            <span class="destination-price">R$ 66,99</span>
+                        </div>
+                        <p class="destination-description"><span class="short-text">A Ponte de Rialto é uma das quatro pontes que atravessam o Grande Canal de Veneza na Itália. Esta ...</span><span class="full-text">A Ponte de Rialto é uma das quatro pontes que atravessam o Grande Canal de Veneza na Itália. Esta ponte de pedra histórica foi projetada por Antonio da Ponte e concluída em 1591. É a ponte mais antiga que atravessa o canal e um dos ícones mais reconhecíveis de Veneza, oferecendo vistas deslumbrantes da cidade.</span> <a href="#" class="read-more">Leia mais</a></p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 - Estação do Parque Nacional -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1121&q=80" alt="Estação do Parque Nacional" class="destination-image">
+                    <div class="destination-info">
+                        <div class="destination-title">
+                            <h3 class="destination-name">🏜️ Estação do Parque Nacional</h3>
+                            <span class="destination-price">R$ 2277,11</span>
+                        </div>
+                        <p class="destination-description"><span class="short-text">Jornada interessante pela América apresentando vistas deslumbrantes em cada estrada que você percorre ...</span><span class="full-text">Jornada interessante pela América apresentando vistas deslumbrantes em cada estrada que você percorre. Os parques nacionais americanos oferecem paisagens diversas, desde cânions profundos até montanhas majestosas, florestas densas e desertos áridos. Uma experiência imperdível para os amantes da natureza e fotografia.</span> <a href="#" class="read-more">Leia mais</a></p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 - Canoa Prahu -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=738&q=80" alt="Canoa Prahu, Bali Indonésia" class="destination-image">
+                    <div class="destination-info">
+                        <div class="destination-title">
+                            <h3 class="destination-name">🚣 Canoa Prahu, Bali Indonésia</h3>
+                            <span class="destination-price">R$ 1888,22</span>
+                        </div>
+                        <p class="destination-description"><span class="short-text">Aproveitar o turismo natural usando uma prahu é altamente recomendado ao visitar Bali, Indonésia ...</span><span class="full-text">Aproveitar o turismo natural usando uma prahu é altamente recomendado ao visitar Bali, Indonésia. Estas canoas tradicionais permitem explorar as águas cristalinas e recifes de coral coloridos da ilha. Os pescadores locais usam estas embarcações há séculos, e agora elas oferecem aos turistas uma experiência autêntica da cultura balinesa.</span> <a href="#" class="read-more">Leia mais</a></p>
+                    </div>
+                </div>
+                
+                <!-- Card 4 - Deserto do Saara -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Deserto do Saara Marrocos" class="destination-image">
+                    <div class="destination-info">
+                        <div class="destination-title">
+                            <h3 class="destination-name">🏜️ Deserto do Saara, Marrocos</h3>
+                            <span class="destination-price">R$ 1166,99</span>
+                        </div>
+                        <p class="destination-description"><span class="short-text">Se você for ao Marrocos, visitar o Deserto do Saara deve estar no topo da sua lista. É como nenhum outro ...</span><span class="full-text">Se você for ao Marrocos, visitar o Deserto do Saara deve estar no topo da sua lista. É como nenhum outro lugar na Terra, com suas dunas douradas que se estendem até onde os olhos podem ver. Experimente um passeio de camelo ao pôr do sol, passe a noite em um acampamento berbere sob as estrelas e maravilhe-se com o vasto silêncio do deserto.</span> <a href="#" class="read-more">Leia mais</a></p>
+                    </div>
+                </div>
+                
+                <!-- Card 5 - Palm Springs -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Palm Springs" class="destination-image">
+                    <div class="destination-info">
+                        <div class="destination-title">
+                            <h3 class="destination-name">🌴 Palm Springs</h3>
+                            <span class="destination-price">R$ 6655,22</span>
+                        </div>
+                        <p class="destination-description"><span class="short-text">Escondido no deserto do interior de Los Angeles e San Diego, Palm Springs oferece um relaxante ...</span><span class="full-text">Escondido no deserto do interior de Los Angeles e San Diego, Palm Springs oferece um relaxante refúgio com clima ensolarado durante todo o ano. Conhecida por sua arquitetura de meio século, campos de golfe de classe mundial, spas luxuosos e paisagens desérticas impressionantes, esta cidade é o destino perfeito para quem busca uma combinação de relaxamento e aventura.</span> <a href="#" class="read-more">Leia mais</a></p>
+                    </div>
+                </div>
+                
+                <!-- Card 6 - Capadócia -->
+                <div class="destination-card">
+                    <img src="images/turkey.jfif" alt="Capadócia, Turquia" class="destination-image">
+                    <div class="destination-info">
+                        <div class="destination-title">
+                            <h3 class="destination-name">🏰 Capadócia, Turquia</h3>
+                            <span class="destination-price">R$ 9080,88</span>
+                        </div>
+                        <p class="destination-description"><span class="short-text">A Capadócia foi uma região histórica na Anatólia Central, principalmente na província de Nevşehir na ...</span><span class="full-text">A Capadócia foi uma região histórica na Anatólia Central, principalmente na província de Nevşehir na Turquia. Famosa por suas formações rochosas únicas conhecidas como "chaminés de fadas", igrejas escavadas na rocha e cidades subterrâneas, a Capadócia oferece uma paisagem surreal. Um passeio de balão de ar quente ao nascer do sol é uma experiência mágica que não pode ser perdida.</span> <a href="#" class="read-more">Leia mais</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Captura de Leads -->
+        <section class="leads-section">
+            <div class="leads-container">
+                <div class="leads-content">
+                    <h2>Pronto para realizar a viagem dos seus sonhos?</h2>
+                    <p>Fale com um de nossos vendedores especializados e receba um atendimento personalizado para planejar sua próxima aventura!</p>
+                    <div class="leads-form">
+                        <input type="text" placeholder="Seu nome" class="lead-input">
+                        <input type="email" placeholder="Seu e-mail" class="lead-input">
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20informações%20sobre%20viagens." class="whatsapp-btn">
+                            <img src="images/whatsapp-icon.svg" alt="WhatsApp" class="whatsapp-icon">
+                            Falar com nosso vendedor
+                        </a>
+                    </div>
+                </div>
+                <div class="leads-image">
+                    <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Atendimento personalizado">
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials-section">
+            <div class="testimonials-header">
+                <a href="#" class="nav-arrow left">←</a>
+                <h2>Clientes Satisfeitos São Nossa Melhor Propaganda</h2>
+                <a href="#" class="nav-arrow right">→</a>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Depoimento 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de perfil" class="profile-img">
+                            <div class="profile-info">
+                                <h3>Sabrina Melya</h3>
+                                <p>Blogger imediatamente</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>3,4</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Sinto facilidade ao fazer escolhas de destinos turísticos quando uso a Elleventrip, e consigo determinar facilmente minhas opções.</p>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de perfil" class="profile-img">
+                            <div class="profile-info">
+                                <h3>Bayu aji sadewa</h3>
+                                <p>Turista indonésio</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>4,8</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Realmente gosto do serviço oferecido pela Elleventrip na organização das minhas viagens, serviços fáceis de entender e que resolvem rapidamente vários tipos de problemas.</p>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Foto de perfil" class="profile-img">
+                            <div class="profile-info">
+                                <h3>Pambudi</h3>
+                                <p>Turista malaio</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>5,0</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Os serviços oferecidos pela Elleventrip são muito completos, por isso acho que a Elleventrip é sempre confiável quando viajo para atrações turísticas ao redor do mundo.</p>
+                </div>
+                
+                <!-- Depoimento 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Foto de perfil" class="profile-img">
+                            <div class="profile-info">
+                                <h3>Roufkuroroninjo</h3>
+                                <p>Turista indonésio</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>4,8</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">É uma alegria que eu seja um novo turista que usa a Elleventrip. Sinto a facilidade de acesso para viajar durante as notícias. Não tenho nenhuma confusão.</p>
+                </div>
+                
+                <!-- Depoimento 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Foto de perfil" class="profile-img">
+                            <div class="profile-info">
+                                <h3>Khoirul anam</h3>
+                                <p>Turista de Brunei</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>3,5</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">É muito raro que existam aplicativos ou serviços de provedores de serviços como este, por isso me sinto ajudado pela presença da Elleventrip.</p>
+                </div>
+                
+                <!-- Depoimento 6 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-profile">
+                            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Foto de perfil" class="profile-img">
+                            <div class="profile-info">
+                                <h3>Yoga Pratama</h3>
+                                <p>Blogger imediatamente</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>4,5</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Quando preciso de material para o meu blog de trabalho sobre destinos turísticos, minha mente vai direto para a Elleventrip, que é o melhor provedor de serviços de viagem.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column footer-brand">
+                <div class="footer-logo"><span class="logo-icon"><img src="images/LOGO_Branco_Transparente.png" alt="Logo Elleventrip" style="height:80px;vertical-align:middle;"></span> Elleventrip</div>
+                <p class="footer-description">Conveniência é nossa prioridade para satisfazer nossos clientes, e fornecemos todas as funcionalidades que você pode usar facilmente e rapidamente.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Sobre</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Como Reservar</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Produtos</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Destinos</a></li>
+                    <li><a href="#">Voos</a></li>
+                    <li><a href="#">Hospedagem</a></li>
+                    <li><a href="#">Cruzeiros</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Social</h3>
+                <ul class="footer-links">
+                    <li><a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20informações%20sobre%20viagens.">Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/elleventrip/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="footer-copyright">Copyright © 2025 Elleventrip</p>
+            <a href="#" class="footer-policy">Política de Privacidade</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menu mobile toggle
+            const menuToggle = document.getElementById('mobile-menu');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    document.body.classList.toggle('menu-open');
+                });
+                
+                // Fechar menu ao clicar em um link
+                const navLinks = navMenu.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    });
+                });
+            }
+            
+            // Ocultar todos os textos completos inicialmente
+            const fullTexts = document.querySelectorAll('.full-text');
+            fullTexts.forEach(text => {
+                text.style.display = 'none';
+            });
+            
+            // Adicionar evento de clique aos links "Leia mais"
+            const readMoreLinks = document.querySelectorAll('.read-more');
+            readMoreLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const descriptionContainer = this.parentElement;
+                    const shortText = descriptionContainer.querySelector('.short-text');
+                    const fullText = descriptionContainer.querySelector('.full-text');
+                    
+                    if (fullText.style.display === 'none') {
+                        shortText.style.display = 'none';
+                        fullText.style.display = 'inline';
+                        this.textContent = 'Mostrar menos';
+                    } else {
+                        shortText.style.display = 'inline';
+                        fullText.style.display = 'none';
+                        this.textContent = 'Leia mais';
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Botão flutuante de WhatsApp -->
+    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20informações%20sobre%20viagens." class="whatsapp-float" aria-label="Contato via WhatsApp">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp" style="width:30px;height:30px;">
+    </a>
+</body>
+</html>
