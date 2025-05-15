@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elleventrip</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,11 +20,10 @@
             <span></span>
         </div>
         <nav id="nav-menu">
-            <a href="#" class="nav-caixa">(Campo em branco)</a>
-            <a href="#" class="nav-caixa">(Campo em branco)</a>
-            <a href="#" class="nav-caixa">(Campo em branco)</a>
-            <a href="#" class="nav-caixa">(Campo em branco)</a>
-            <a href="#" class="nav-caixa">(Campo em branco)</a>
+            <a href="#guides" class="nav-caixa">Guias</a>
+            <a href="#booking" class="nav-caixa">Agende Sua Viagem</a>
+            <a href="#testimonials" class="nav-caixa">Comentarios de Clientes</a>
+            <a href="#about" class="nav-caixa">Sobre nos</a>
         </nav>
         <div class="idioma">
            
@@ -29,16 +33,9 @@
         <section class="hero">
             <h1>Viaje ao redor do mundo</h1>
             <p>Realize sua próxima viagem com quem entende do assunto! Destinos incríveis, atendimento de confiança e reserva fácil para você explorar o mundo do seu jeito.</p>
-            <form class="busca">
-                <input type="text" placeholder="Cidade, destino ou hotel">
-                <input type="text" placeholder="Data de entrada">
-                <input type="text" placeholder="Data de saída">
-                <input type="text" placeholder="Número de hospedes">
-                <button type="submit" aria-label="Search"><span class="icone-busca"><img src="images/lupa.jpg" alt="Buscar" style="height:24px;width:24px;object-fit:contain;vertical-align:middle;"></span></button>
-            </form>
         </section>
         
-        <section class="guides-section">
+        <section id="guides" class="guides-section">
             <h2>Guias para suas próximas férias</h2>
             <p class="guides-subtitle">Confira a seleção desta semana de produtos populares que podem chamar sua atenção.</p>
             
@@ -127,7 +124,7 @@
         </section>
         
         <!-- Seção de Captura de Leads -->
-        <section class="leads-section">
+        <section id="booking" class="leads-section">
             <div class="leads-container">
                 <div class="leads-content">
                     <h2>Pronto para realizar a viagem dos seus sonhos?</h2>
@@ -147,7 +144,7 @@
             </div>
         </section>
         
-        <section class="testimonials-section">
+        <section id="testimonials" class="testimonials-section">
             <div class="testimonials-header">
                 <a href="#" class="nav-arrow left">←</a>
                 <h2>Clientes Satisfeitos São Nossa Melhor Propaganda</h2>
@@ -266,7 +263,7 @@
         </section>
     </main>
     
-    <footer class="footer">
+    <footer id="about" class="footer">
         <div class="footer-container">
             <div class="footer-column footer-brand">
                 <div class="footer-logo"><span class="logo-icon"><img src="images/LOGO_Branco_Transparente.png" alt="Logo Elleventrip" style="height:80px;vertical-align:middle;"></span> Elleventrip</div>
@@ -313,9 +310,23 @@
             const navMenu = document.getElementById('nav-menu');
             
             if (menuToggle && navMenu) {
-                menuToggle.addEventListener('click', function() {
+                menuToggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
                     navMenu.classList.toggle('active');
                     document.body.classList.toggle('menu-open');
+                });
+                
+                // Fechar menu ao clicar fora dele
+                document.addEventListener('click', function(e) {
+                    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                        navMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    }
+                });
+                
+                // Evitar que cliques dentro do menu o fechem
+                navMenu.addEventListener('click', function(e) {
+                    e.stopPropagation();
                 });
                 
                 // Fechar menu ao clicar em um link

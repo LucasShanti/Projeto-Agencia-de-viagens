@@ -152,7 +152,7 @@ main {
 }
 .hero p {
     color: #e3e3e3;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 38px;
     text-shadow: 0 1px 6px rgba(0,0,0,0.10);
     max-width: 800px;
@@ -533,6 +533,8 @@ main {
     text-decoration: none;
     display: inline-block;
     transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+    width: 160px;
+    text-align: center;
 }
 .nav-caixa:hover {
     box-shadow: 0 4px 20px rgba(0,0,0,0.18);
@@ -727,12 +729,17 @@ nav {
         width: 80%;
         max-width: 300px;
         height: 100vh;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.95);
         flex-direction: column;
         padding: 80px 20px 20px;
         transition: right 0.3s ease;
         z-index: 100;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav .nav-caixa {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #1a237e;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
     
     nav.active {
@@ -740,9 +747,14 @@ nav {
     }
     
     .nav-caixa {
-        width: 100%;
-        margin: 10px 0;
+        width: 90%;
+        max-width: 180px;
+        margin: 12px auto;
         text-align: center;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        display: block;
     }
 }
 
@@ -802,7 +814,7 @@ nav {
     overflow: hidden;
 }
 
-/* Overlay para quando o menu mobile está aberto */
+/* Overlay para quando o menu mobile está aberto - removido para melhorar a experiência */
 body.menu-open::before {
     content: '';
     position: fixed;
@@ -810,7 +822,7 @@ body.menu-open::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0); /* Removido o escurecimento */
     z-index: 90;
 }
 
@@ -861,6 +873,14 @@ body.menu-open::before {
     
     .rating {
         align-self: flex-end;
+    }
+    
+    .nav-caixa {
+        width: 95%;
+        max-width: 160px;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin: 6px auto;
     }
 }
 
@@ -1041,12 +1061,14 @@ body.menu-open::before {
 
 @media (max-width: 700px) {
     .category-buttons {
-        gap: 10px;
+        gap: 8px;
+        margin-bottom: 15px;
     }
     
     .category-btn {
-        padding: 10px 15px;
-        font-size: 0.9rem;
+        padding: 12px 18px;
+        font-size: 0.95rem;
+        margin-bottom: 8px;
     }
     
     .guides-section h2 {
